@@ -13,6 +13,7 @@
 		2FAF7ED62AE43008008CD139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF7ED42AE43008008CD139 /* Main.storyboard */; };
 		2FAF7ED82AE4300A008CD139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF7ED72AE4300A008CD139 /* Assets.xcassets */; };
 		2FAF7EDB2AE4300A008CD139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF7ED92AE4300A008CD139 /* LaunchScreen.storyboard */; };
+		2FAF7EE32AE512B8008CD139 /* DrwaingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF7EE22AE512B8008CD139 /* DrwaingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2FAF7ED72AE4300A008CD139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FAF7EDA2AE4300A008CD139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FAF7EDC2AE4300A008CD139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FAF7EE22AE512B8008CD139 /* DrwaingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrwaingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		2FAF7ECD2AE43008008CD139 /* GhostDrawingBoard */ = {
 			isa = PBXGroup;
 			children = (
+				2FAF7EE72AE57C1C008CD139 /* ViewController */,
 				2FAF7ECE2AE43008008CD139 /* AppDelegate.swift */,
 				2FAF7ED02AE43008008CD139 /* SceneDelegate.swift */,
-				2FAF7ED22AE43008008CD139 /* ViewController.swift */,
-				2FAF7ED42AE43008008CD139 /* Main.storyboard */,
 				2FAF7ED72AE4300A008CD139 /* Assets.xcassets */,
 				2FAF7ED92AE4300A008CD139 /* LaunchScreen.storyboard */,
 				2FAF7EDC2AE4300A008CD139 /* Info.plist */,
 			);
 			path = GhostDrawingBoard;
+			sourceTree = "<group>";
+		};
+		2FAF7EE62AE57C12008CD139 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FAF7EE22AE512B8008CD139 /* DrwaingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FAF7EE72AE57C1C008CD139 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2FAF7EE62AE57C12008CD139 /* View */,
+				2FAF7ED22AE43008008CD139 /* ViewController.swift */,
+				2FAF7ED42AE43008008CD139 /* Main.storyboard */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				2FAF7ED32AE43008008CD139 /* ViewController.swift in Sources */,
 				2FAF7ECF2AE43008008CD139 /* AppDelegate.swift in Sources */,
 				2FAF7ED12AE43008008CD139 /* SceneDelegate.swift in Sources */,
+				2FAF7EE32AE512B8008CD139 /* DrwaingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

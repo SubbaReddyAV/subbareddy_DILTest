@@ -15,15 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w1-C5-ILA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w1-C5-ILA" customClass="DrawingView" customModule="GhostDrawingBoard" customModuleProvider="target">
                                 <rect key="frame" x="16" y="75" width="361" height="653"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="R80-Cs-ET7">
-                                <rect key="frame" x="76.000000000000014" y="752" width="241.33333333333337" height="50"/>
+                                <rect key="frame" x="90.666666666666686" y="752" width="212" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nf-gO-bq9" userLabel="Red">
-                                        <rect key="frame" x="0.0" y="0.0" width="57.333333333333336" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="13C-2O-TcX"/>
                                         </constraints>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rID-eS-Upy" userLabel="Blue">
-                                        <rect key="frame" x="61.333333333333343" y="0.0" width="57.333333333333343" height="50"/>
+                                        <rect key="frame" x="53.999999999999986" y="0.0" width="50" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray">
                                             <color key="baseBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajx-nv-mgW" userLabel="Green">
-                                        <rect key="frame" x="122.66666666666664" y="0.0" width="57.333333333333329" height="50"/>
+                                        <rect key="frame" x="108" y="0.0" width="50" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray">
                                             <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
@@ -56,9 +56,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udx-ju-7Z3" userLabel="Eraser">
-                                        <rect key="frame" x="184" y="0.0" width="57.333333333333343" height="50"/>
+                                        <rect key="frame" x="162" y="0.0" width="50" height="50"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Eras"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="eraser" imagePlacement="top"/>
                                         <connections>
                                             <action selector="eraseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvJ-at-hZR"/>
                                         </connections>
@@ -91,7 +91,7 @@
                     </view>
                     <connections>
                         <outlet property="blueButton" destination="rID-eS-Upy" id="8zO-r5-s35"/>
-                        <outlet property="drwaingView" destination="2w1-C5-ILA" id="oyW-Qh-Szv"/>
+                        <outlet property="drwaingView" destination="2w1-C5-ILA" id="vVq-LS-g8S"/>
                         <outlet property="eraseButton" destination="Udx-ju-7Z3" id="Fpu-ZI-ler"/>
                         <outlet property="greenButton" destination="ajx-nv-mgW" id="dS9-14-IJe"/>
                         <outlet property="redButton" destination="5nf-gO-bq9" id="59A-85-9YZ"/>
@@ -103,6 +103,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="eraser" width="24" height="24"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
